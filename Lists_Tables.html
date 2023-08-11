@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists and Tables</title>
+    <style>
+        .tb {
+            border: 2px solid black;
+        }
+         
+       .tb tr {
+        border:  2px solid black;
+       }
+    </style>
+</head>
+
+<body>
+
+    <!-- "ul" tag is used for "unordered lists" and in the "type" attribute of "ul" tag there are three options : disk,circle,square  -->
+    <ul type="disk">
+        <li>This is first item of my unordered list </li>
+        <li>This is second item of my unordered list </li>
+
+        <ul type="circle"> <!-- Nesting is allowed in ordered and unordered lists -->
+            <li>Another one</li>
+            <li>Another two</li>
+        </ul>
+
+        <li>This is third item of my unordered list </li>
+        <li>This is fourth item of my unordered list </li>
+    </ul>
+
+    <!-- "ol" tag is used for "ordered lists" and in the "type" attribute of "ol" tag there are five options : 1,A,a,I,i   -->
+    <ol type="1">
+        <li>This is first item of my ordered lists</li>
+        <li>This is second item of my ordered lists</li>
+
+        <ol type="a"> <!-- Nesting is allowed in ordered and unordered lists -->
+            <li>Another one</li>
+            <li>Another two</li>
+        </ol>
+
+        <li>This is third item of my ordered lists</li>
+        <li>This is fourth item of my ordered lists</li>
+    </ol>
+
+    <!-- TABLES -->
+    <table class="tb">
+        <thead class="th">
+            <tr>
+                <th>STUDENT NAME </th>
+                <th>STUDENT ID</th>
+                <th>DEPARTMENT</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Aman Gupta </td>
+                <td>4556</td>
+                <td>CSE</td>
+            </tr>
+
+            <tr>
+                <td>Shubham Gupta </td>
+                <td>4585</td>
+                <td>IT</td>
+            </tr>
+
+            <tr>
+                <td>Amir Khan </td>
+                <td>4685</td>
+                <td>CSE </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
