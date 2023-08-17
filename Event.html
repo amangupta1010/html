@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in js</title>
+</head>
+
+<body>
+    <style>
+        .mydiv {
+            display: flex;
+        }
+        .container {
+            border: 3px solid black;
+            height: 200px;
+            width: 200px;
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+    <div class="mydiv">
+        <div class="container" onclick="clickFn()" oncontextmenu="contextmenu()" oncopy="copyfn()" >
+            Good Morning Everyone.
+        </div>
+        <div id="Event" class="container" onclick="changetext()">
+            Welcome to my universe.
+        </div>
+        <div class="container" onmouseover="mouseOver()"></div>
+        <div class="container" ondblclick="dbclickfn()"></div>
+    </div>
+
+    <script>
+        function clickFn() {
+            alert("Hello, Mr. Aman Gupta");
+        }
+
+        function dbclickfn() {
+            alert("double click for div container");
+        }
+
+        function contextmenu() {
+            alert("Right click for div container");
+        }
+
+        function copyfn() {
+            alert("Please do not copy this text");
+        }
+
+        function mouseOver() {
+            alert("You just move the mouse cursor over the div container.");
+        }
+
+       function changetext(){
+        document.getElementById('Event').innerHTML="Hello, Manu Gupta" ;
+        document.getElementById('Event').style="background-color: red; color: white;";
+       }
+    </script>
+</body>
+
+</html>
